@@ -3,9 +3,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 import ollama
 
 
-# -------------------------
 # Load Vector Database
-# -------------------------
 def load_vector_db():
 
     embeddings = HuggingFaceEmbeddings(
@@ -21,9 +19,7 @@ def load_vector_db():
     return db
 
 
-# -------------------------
 # Ask Question
-# -------------------------
 def ask_question(question):
 
     db = load_vector_db()
@@ -70,9 +66,7 @@ Answer in 2-3 sentences.
     print(answer)
 
 
-# -------------------------
 # Run Chatbot
-# -------------------------
 if __name__ == "__main__":
 
     while True:
