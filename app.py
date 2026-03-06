@@ -9,9 +9,7 @@ st.title("Swiggy Annual Report Chatbot")
 st.write("Ask questions about the Swiggy Annual Report.")
 
 
-# -------------------------
 # Cache Vector DB
-# -------------------------
 @st.cache_resource
 def get_db():
     return load_vector_db()
@@ -20,9 +18,7 @@ def get_db():
 db = get_db()
 
 
-# -------------------------
 # Suggested Questions
-# -------------------------
 st.markdown("### Suggested Questions")
 
 examples = [
@@ -39,9 +35,7 @@ for i, q in enumerate(examples):
         st.session_state["selected_question"] = q
 
 
-# -------------------------
 # Chat History
-# -------------------------
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -57,9 +51,7 @@ for msg in st.session_state.messages:
         st.caption("Sources: " + ", ".join([f"Page {p}" for p in msg["sources"]]))
 
 
-# -------------------------
 # Chat Input
-# -------------------------
 question = st.chat_input("Ask a question about the Swiggy report")
 
 if "selected_question" in st.session_state:
