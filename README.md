@@ -31,21 +31,7 @@ The chatbot retrieves relevant sections from the report using a **vector databas
 
 ## Project Architecture
 
-PDF Document
-↓
-Text Chunking
-↓
-Embeddings (MiniLM)
-↓
-FAISS Vector Database
-↓
-Retriever
-↓
-Mistral LLM via Ollama
-↓
-Answer + Source Pages
-↓
-Streamlit Chat UI
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3253e012-c814-44ae-ac11-4e229d109dac" />
 
 ---
 
