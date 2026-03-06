@@ -69,6 +69,9 @@ The chatbot will open in your browser at:
 [http://localhost:8501](http://localhost:8501)
 
 ---
+### 5.Screenshots
+<img width="1454" height="1336" alt="image" src="https://github.com/user-attachments/assets/c17a70e3-7edb-4d11-9c71-c3fb3cd56546" />
+
 
 ## Example Questions
 
